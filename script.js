@@ -59,5 +59,9 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else if (guess === number) {
     document.querySelector('.message').textContent = '🏆You Win';
+
+    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').style.width = '30rem';
+    document.querySelector('.number').textContent = number;
   }
 });
